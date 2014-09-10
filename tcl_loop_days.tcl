@@ -1,14 +1,10 @@
 #!/usr/bin/tclsh
 
 # first.tcl
-set days [list Monday Tuesday Wednesday Thursday \
-    Friday Saturday Sunday]
-set n [llength $days]
+puts $nums
 
-set i 0
+lappend nums 7 8 9
+puts $nums
 
-while {$i < $n} {
-
-    puts [lindex $days $i]
-    incr i
-}
+puts [linsert $nums 0 1 2 3]
+puts $nums
